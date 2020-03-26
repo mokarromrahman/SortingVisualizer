@@ -88,3 +88,26 @@ export const selectionSort = array =>
     //return the sorted array
     return array;
 }
+
+export const quickSort = array =>
+{
+    //start at index 1 for quicksort because
+    //we need to check that 
+    for(let i = 1; i < array.length; ++i)
+    {
+        //check each value and keep going left on the
+        //array as long as the current number is smaller than
+        //the number on the left
+        let j = i;
+        while(j > 0 && array[j - 1] > array[j])
+        {
+            //swap
+            let temp = array[j - 1];
+            array[j - 1] = array[j];
+            array[j] = temp;
+            //decrement the index and keep going
+            j--;
+        }
+    }
+    return array;
+}
