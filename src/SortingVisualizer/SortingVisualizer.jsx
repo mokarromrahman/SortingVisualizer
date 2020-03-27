@@ -42,10 +42,10 @@ export default class SortingVisualizer extends React.Component
         console.log(arraysAreEqual(jsSortedArray,sortedArray));
     }
 
-    quickSort()
+    insertionSort()
     {
         const jsSortedArray = this.state.array.slice().sort((a,b) => a - b);
-        const sortedArray = SortingAlgorithms.quickSort(this.state.array);
+        const sortedArray = SortingAlgorithms.insertionSort(this.state.array);
         //console.log('im working');
 
         console.log("jsSorted: ");
@@ -72,7 +72,7 @@ export default class SortingVisualizer extends React.Component
 
     }
 
-    insertionSort()
+    quickSort()
     {
 
     }
@@ -111,7 +111,7 @@ export default class SortingVisualizer extends React.Component
             //swap out this line
             //let sortedArray = SortingAlgorithms.mergeSort(array);
             //let sortedArray = SortingAlgorithms.selectionSort(array);
-            let sortedArray = SortingAlgorithms.quickSort(array);
+            let sortedArray = SortingAlgorithms.insertionSort(array);
 
 
             //this was used to see what the individual value of each array was

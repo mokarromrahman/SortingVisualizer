@@ -89,7 +89,7 @@ export const selectionSort = array =>
     return array;
 }
 
-export const quickSort = array =>
+export const insertionSort = array =>
 {
     //start at index 1 for quicksort because
     //we need to check that 
